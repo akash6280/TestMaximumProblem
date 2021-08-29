@@ -1,26 +1,26 @@
 package com.bridgelabz.testmaximumproblem;
 
 public class TestMaximum { 
-	public static void getMaximum(Float firstNumber, Float secondNumber, Float thirdNumber) {
-		if (firstNumber.compareTo(secondNumber) > 0) {
-			if (firstNumber.compareTo(thirdNumber) > 0) {
-				System.out.println(firstNumber);
+	public static void getMaximum(String firstWord, String secondWord, String thirdWord) {
+		if (firstWord.compareTo(secondWord) > 0) {
+			if (firstWord.compareTo(thirdWord) > 0) {
+				System.out.println(firstWord);
 			} 
 			else {
-				System.out.println(thirdNumber);
+				System.out.println(thirdWord);
 			}
 		} 
 		else {
-			if (secondNumber.compareTo(thirdNumber) > 0) {
-				System.out.println(secondNumber);
+			if (secondWord.compareTo(thirdWord) > 0) {
+				System.out.println(secondWord);
 			} 
 			else {
-				System.out.println(thirdNumber);
+				System.out.println(thirdWord);
 			}
 		}
 	}
 	public static void main(String[] args) {
-		getMaximum(31.0f,65.2f,63.8f);
+		getMaximum("Apple","Peach","Banana");
 		
 	}
 }
