@@ -1,7 +1,7 @@
 package com.bridgelabz.testmaximumproblem;
 
 public class TestMaximum { 
-	public static void getMaximum(Integer firstNumber, Integer secondNumber, Integer thirdNumber) {
+	public static void getMaximum(Float firstNumber, Float secondNumber, Float thirdNumber) {
 		if (firstNumber.compareTo(secondNumber) > 0) {
 			if (firstNumber.compareTo(thirdNumber) > 0) {
 				System.out.println(firstNumber);
@@ -20,7 +20,7 @@ public class TestMaximum {
 		}
 	}
 	public static void main(String[] args) {
-		getMaximum(31,1313,131);
+		getMaximum(31.0f,65.2f,63.8f);
 		
 	}
 }
