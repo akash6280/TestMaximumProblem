@@ -1,7 +1,15 @@
 package com.bridgelabz.testmaximumproblem;
 
-public class TestMaximum { 
-	public static <T extends Comparable<T>> void getMaximum(T first, T second, T third) {
+public class TestMaximum <E extends Comparable<E>>{
+	E first,second, third;
+	
+	public TestMaximum(E first, E second, E third) {
+		this.first = first;
+		this.second = second;
+		this.third = third;
+	}
+
+	 void getMaximum() {
 		if (first.compareTo(second) > 0) {
 			if (first.compareTo(third) > 0)
 				System.out.println(first);
@@ -16,9 +24,9 @@ public class TestMaximum {
 		}
 	}
 	public static void main(String[] args) {
-		getMaximum(31,1313,131);
-		getMaximum(31.0f,65.2f,63.8f);
-		getMaximum("Apple","Peach","Banana");
+		new TestMaximum<Integer>(31,1313,131).getMaximum();
+		new TestMaximum<Float>(31.0f,65.2f,63.8f).getMaximum();
+		new TestMaximum<String>("Apple","Peach","Banana").getMaximum();
 		
 	}
 }
