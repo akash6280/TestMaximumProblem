@@ -10,7 +10,7 @@ public class TestMaximum <E extends Comparable<E>>{
 	}
 
 	 void getMaximum() {
-		if (first.compareTo(second) > 0) {
+		if (first.compareTo(second)> 0) {
 			if (first.compareTo(third) > 0)
 				System.out.println(first);
 			else
